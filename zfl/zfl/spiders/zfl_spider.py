@@ -4,7 +4,7 @@ from zfl.items import ZflItem
 class zfl(scrapy.Spider):
 
 	name = 'zflspider'
-	allowed_domains = ['952lls.com']
+	allowed_domains = ['952lls.com'，'zhaofuli.com']
 	start_urls = ['https://952lls.com/MiiTao/']
 	
 	def parse(self, response):
