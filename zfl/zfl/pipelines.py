@@ -18,7 +18,7 @@ class ZflPipeline(ImagesPipeline):
         img_alt = request.url.split('/')[-1]
         title = request.meta['item']
         title = re.sub(r'[？\\*|“<>:/]', '', title)
-        filename = u'full{},{}'.format(title, img_alt)
+        filename = u'full/{}/{}'.format(title, img_alt)
         return filename
     
     def item_completed(self, results, item, info):
